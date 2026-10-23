@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MBAs Vanzolini | Estratégia de comunicação v5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--nv:#2B2666;--nvd:#15123F;--nvl:#EEEDF7;
+--eq:#1F8A64;--eql:#7FE3C0;--ia:#6B46D6;--ial:#C3B3F7;--li:#2F6BD8;--lil:#A9C9FF;
+--ink:#17152E;--mut:#565B70;--soft:#CFCCF0;--g2:#E3E4EE;--g1:#F4F4F9}
+*{box-sizing:border-box}
+html{background:#D7D8E2}
+body{margin:0;padding:22px 14px 60px;font-family:Inter,'Helvetica Neue',Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.btn{position:fixed;right:18px;top:14px;z-index:50;background:var(--nv);color:#fff;border:0;border-radius:99px;padding:9px 18px;font:600 14px Inter,sans-serif;cursor:pointer}
+.slide{--u:calc(100cqw/1280);position:relative;width:min(100%,1280px);margin:0 auto 22px;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;border-radius:18px;background:#fff}
+.slide>.s{position:absolute;inset:0;padding:calc(64*var(--u)) calc(80*var(--u));display:flex;flex-direction:column}
+.slide:not(.nonum)::after{content:attr(data-n);position:absolute;right:calc(44*var(--u));bottom:calc(30*var(--u));font-size:calc(12*var(--u));color:#A3A6B8}
+.dk{background:radial-gradient(120% 140% at 85% 10%,#3A3486 0%,var(--nv) 38%,var(--nvd) 100%);color:#fff}
+.dk:not(.nonum)::after{color:rgba(255,255,255,.4)}
+.lt{background:var(--g1)}
+.ey{font-size:calc(13*var(--u));letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ia)}
+.dk .ey{color:var(--eql)}
+h1,h2,h3{margin:0;font-family:'Work Sans',Inter,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:calc(46*var(--u));font-weight:600;line-height:1.08;margin-top:calc(14*var(--u));max-width:calc(900*var(--u))}
+h3{font-size:calc(23*var(--u));font-weight:600;line-height:1.2}
+p{margin:0;text-wrap:pretty}
+.lead{font-size:calc(21*var(--u));line-height:1.45;color:var(--mut);margin-top:calc(18*var(--u));max-width:calc(760*var(--u))}
+.dk .lead{color:var(--soft)}
+.body{flex:1;min-height:0;margin-top:calc(44*var(--u))}
+.grid{display:grid;gap:calc(32*var(--u))}
+.g5{grid-template-columns:repeat(5,1fr)}.g6{grid-template-columns:repeat(6,1fr)}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.big{font-family:'Work Sans';font-weight:600;letter-spacing:-.035em;line-height:1;font-size:calc(64*var(--u))}
+.kpi .big{display:block}
+.kpi p{margin-top:calc(14*var(--u));font-size:calc(17*var(--u));line-height:1.4;color:var(--mut)}
+.dk .kpi p{color:var(--soft)}
+.card{border-radius:calc(20*var(--u));padding:calc(30*var(--u));background:#fff}
+.dk .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.card p{font-size:calc(17*var(--u));line-height:1.45;color:var(--mut)}
+.dk .card p{color:var(--soft)}
+.card h3+p{margin-top:calc(10*var(--u))}
+.navy{background:var(--nv)!important;color:#fff}.navy p{color:var(--soft)!important}
+.pill{display:inline-flex;align-items:center;justify-content:center;font-size:calc(12*var(--u));font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:calc(6*var(--u)) calc(12*var(--u));border-radius:99px;background:var(--nvl);color:var(--nv)}
+.dk .pill{background:rgba(255,255,255,.12);color:#fff}
+.c-eq{--c:var(--eq);--cl:var(--eql);--ca:#37A981}.c-ia{--c:var(--ia);--cl:var(--ial);--ca:#8E6CF0}.c-li{--c:var(--li);--cl:var(--lil);--ca:#4C86F0}
+.pill.cc{background:var(--c);color:#fff}
+.vsym{position:absolute;background:currentColor;-webkit-mask:url(assets/simbolo-v.png) center/contain no-repeat;mask:url(assets/simbolo-v.png) center/contain no-repeat;pointer-events:none}
+.vsym.fio{background:none;-webkit-mask:none;mask:none}.vsym.fio svg{width:100%;height:100%;display:block;overflow:visible}
+.vlogo{display:block;background:var(--nv);-webkit-mask:url(assets/logo-vanzolini.png) left center/contain no-repeat;mask:url(assets/logo-vanzolini.png) left center/contain no-repeat}
+.face{width:calc(64*var(--u));height:calc(64*var(--u));border-radius:50%;object-fit:cover;display:block;box-shadow:0 0 0 calc(3*var(--u)) #fff}
+.face.sm{width:calc(44*var(--u));height:calc(44*var(--u))}
+.faces{display:flex}.faces .face+.face{margin-left:calc(-14*var(--u))}
+.pz{display:block;width:100%;border-radius:calc(12*var(--u));box-shadow:0 calc(18*var(--u)) calc(40*var(--u)) rgba(21,18,63,.22)}
+.dk .pz{box-shadow:0 calc(20*var(--u)) calc(50*var(--u)) rgba(0,0,0,.45)}
+.cap{font-size:calc(14*var(--u));line-height:1.45;color:var(--mut);margin-top:calc(10*var(--u))}
+.dk .cap{color:var(--soft)}
+.src{font-size:calc(12*var(--u));color:#8C90A3;margin-top:auto;padding-top:calc(16*var(--u))}
+.dk .src{color:rgba(255,255,255,.5)}
+.lbl{font-size:calc(14*var(--u));letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.chip{display:inline-block;font-size:calc(18*var(--u));padding:calc(11*var(--u)) calc(20*var(--u));border-radius:99px;margin:0 calc(8*var(--u)) calc(12*var(--u)) 0;background:#fff;color:var(--ink)}
+.chip.no{background:transparent;border:1px dashed #B5B8C9;color:var(--mut);text-decoration:line-through;text-decoration-color:rgba(86,91,112,.5)}
+.bar{height:calc(10*var(--u));border-radius:99px;background:var(--g2);overflow:hidden;margin-top:calc(10*var(--u))}
+.bar i{display:block;height:100%;border-radius:99px;background:var(--nv)}
+.dk .bar{background:rgba(255,255,255,.12)}.dk .bar i{background:var(--eql)}
+.row{display:flex;justify-content:space-between;font-size:calc(18*var(--u))}
+.ini{width:calc(56*var(--u));height:calc(56*var(--u));border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Work Sans';font-weight:600;font-size:calc(20*var(--u))}
+.vid{width:calc(270*var(--u));aspect-ratio:4/5;border-radius:calc(12*var(--u));overflow:hidden;background:#17144A;box-shadow:0 calc(20*var(--u)) calc(50*var(--u)) rgba(0,0,0,.45)}.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.lk{font-size:calc(15*var(--u));font-weight:600;color:var(--c);text-decoration:none;border-bottom:1px solid currentColor}
+.div .s{justify-content:center}
+.div h2{font-size:calc(76*var(--u));font-weight:600;max-width:calc(720*var(--u));line-height:1.02;margin-top:calc(18*var(--u))}
+.lh{display:grid;grid-template-columns:calc(420*var(--u)) 1fr;gap:calc(48*var(--u));align-items:end}
+.lh h2{font-size:calc(42*var(--u))}.lh .lead{font-size:calc(19*var(--u));margin-top:0}
+.lp{margin:calc(36*var(--u)) auto 0;width:calc(1060*var(--u));gap:calc(28*var(--u))}
+/* peça HTML */
+.pc{container-type:inline-size;position:relative;overflow:hidden;border-radius:calc(12*var(--u));box-shadow:0 calc(18*var(--u)) calc(40*var(--u)) rgba(21,18,63,.25)}
+.dk .pc{box-shadow:0 calc(20*var(--u)) calc(50*var(--u)) rgba(0,0,0,.45)}
+.pc>.in{--p:calc(100cqw/1080);position:absolute;inset:0;background:linear-gradient(165deg,#2E2970 0%,#1B1850 70%,#141140 100%);color:#fff;font-family:'Work Sans',sans-serif}
+.pc p{text-wrap:balance}
+.pc .mba{position:absolute;left:calc(64*var(--p));top:calc(60*var(--p));width:calc(220*var(--p))}
+.pc .fv{position:absolute;right:calc(64*var(--p));top:calc(62*var(--p));width:calc(260*var(--p));height:calc(84*var(--p));background:#fff;-webkit-mask-position:right center;mask-position:right center}
+.pc .foot{position:absolute;left:0;right:0;bottom:0;height:calc(190*var(--p));background:#17144A;border-top:calc(3*var(--p)) solid var(--ca);z-index:2;display:flex;align-items:center;justify-content:space-between;padding:0 calc(64*var(--p))}
+.pc .chp{font-family:Inter;font-size:calc(28*var(--p));border:calc(2*var(--p)) solid rgba(255,255,255,.5);border-radius:99px;padding:calc(10*var(--p)) calc(24*var(--p));white-space:nowrap}
+.pc .sub{display:block;font-family:Inter;font-size:calc(24*var(--p));color:rgba(255,255,255,.7);margin-top:calc(14*var(--p))}
+.pc .cta{font-family:Inter;font-weight:600;font-size:calc(30*var(--p));background:var(--c);border-radius:99px;padding:calc(20*var(--p)) calc(40*var(--p));white-space:nowrap}
+.pc .its{position:absolute;left:calc(64*var(--p));display:grid;gap:calc(26*var(--p));font-family:Inter;font-size:calc(36*var(--p))}
+.pc .its b{color:var(--cl);margin-right:calc(18*var(--p))}
+@media print{@page{size:1280px 720px;margin:0}html,body{background:#fff;padding:0}.btn{display:none}.slide{width:1280px;height:720px;margin:0;border-radius:0;break-after:page}}
+body.present{padding:0;background:#000;overflow:hidden}
+body.present .btn{display:none}
+body.present .slide{display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100vw,calc(100vh*16/9));margin:0;border-radius:0}
+body.present .slide.on{display:block}
+</style></head>
+<body>
+<button class="btn" id="btn">Apresentar</button>
+
+<!-- CAPA -->
+<section class="slide dk nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(820*var(--u));height:calc(800*var(--u));right:calc(-140*var(--u));top:calc(-40*var(--u))"></span>
+<img src="assets/mba-logo.svg" alt="MBA Vanzolini" style="width:calc(200*var(--u))">
+<h1 style="margin-top:auto;font-size:calc(72*var(--u));font-weight:600;line-height:1.02;max-width:calc(700*var(--u))">Estratégia de comunicação</h1>
+<p style="margin-top:calc(22*var(--u));font-size:calc(22*var(--u));color:var(--soft)">Campanha 2027 · outubro de 2026</p>
+</div></section>
+
+<!-- O QUE DECIDIR -->
+<section class="slide"><div class="s">
+<div class="ey">nesta conversa</div><h2>Três decisões para começar a campanha</h2>
+<div class="body grid g3" style="align-content:center">
+<div class="card" style="background:var(--g1)"><div class="big" style="color:var(--ia);font-size:calc(52*var(--u))">01</div><h3 style="margin-top:calc(24*var(--u))">A ideia</h3><p>Uma campanha só para os três MBAs, falando da carreira de quem se matricula.</p></div>
+<div class="card" style="background:var(--g1)"><div class="big" style="color:var(--eq);font-size:calc(52*var(--u))">02</div><h3 style="margin-top:calc(24*var(--u))">As artes</h3><p>Cinco layouts que se revezam no feed e em cada etapa do funil.</p></div>
+<div class="card" style="background:var(--g1)"><div class="big" style="color:var(--li);font-size:calc(52*var(--u))">03</div><h3 style="margin-top:calc(24*var(--u))">As melhorias</h3><p>Rastreio, LPs e réguas prontos para a verba de 2027 render mais.</p></div>
+</div></div></section>
+
+<!-- DIV CENÁRIO -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">cenário</div><h2>Quem compra MBA e o que o mercado mostra</h2></div></section>
+
+<!-- POR QUE MBA -->
+<section class="slide"><div class="s">
+<div class="ey">por que fazer MBA</div><h2>O MBA é comprado para chegar à próxima cadeira</h2>
+<div class="body grid g4" style="align-content:center;gap:calc(40*var(--u))">
+<div class="kpi"><span class="big" style="color:var(--nv)">+54%</span><p>de ganho salarial com MBA em cargos de coordenação. Em analista, +15%.</p></div>
+<div class="kpi"><span class="big" style="color:var(--nv)">+24%</span><p>de salário medido nos egressos de MBA da FGV.</p></div>
+<div class="kpi"><span class="big" style="color:var(--nv)">ROI</span><p>é o critério mais considerado na escolha do MBA.</p></div>
+<div class="kpi"><span class="big" style="color:var(--ia)">56%</span><p>acham que dominar IA será essencial para a próxima promoção.</p></div>
+</div>
+<div class="src">Catho (2018) · FGV · GMAC (2025) · LinkedIn (2025)</div>
+</div></section>
+
+<!-- QUEM SE MATRICULA -->
+<section class="slide lt"><div class="s">
+<div class="ey">quem se matriculou em 2026</div><h2>Ninguém chega para começar do zero</h2>
+<p class="lead">Chegam com experiência, certificação e, às vezes, outro MBA. Estão trocando de cadeira: promoção, nova área ou recolocação.</p>
+<div class="body grid g3" style="margin-top:calc(36*var(--u))">
+<div class="card c-eq"><div style="display:flex;align-items:center;gap:calc(16*var(--u))"><img class="face" src="assets/rostos/MBA-EQ-M1.jpg" alt="Yumi"><span class="pill cc">Eng. da Qualidade</span></div>
+<div class="big" style="font-size:calc(44*var(--u));margin-top:calc(24*var(--u));color:var(--eq)">8 de 10</div><p style="margin-top:calc(8*var(--u))">já tinham certificação de qualidade: ISO, Green Belt, IATF.</p></div>
+<div class="card c-ia"><div style="display:flex;align-items:center;gap:calc(16*var(--u))"><img class="face" src="assets/rostos/MBA-GEP-H1.jpg" alt="Paulo"><span class="pill cc">IA Aplicada a Projetos</span></div>
+<div class="big" style="font-size:calc(44*var(--u));margin-top:calc(24*var(--u));color:var(--ia)">4 de 7</div><p style="margin-top:calc(8*var(--u))">já em gerência ou acima, quase todos com PMP, Scrum ou Black Belt.</p></div>
+<div class="card c-li"><div style="display:flex;align-items:center;gap:calc(16*var(--u))"><img class="face" src="assets/rostos/MBA-LIE-M1.jpg" alt="Beatriz"><span class="pill cc">Liderança, IA e Execução</span></div>
+<div class="big" style="font-size:calc(44*var(--u));margin-top:calc(24*var(--u));color:var(--li)">Sênior</div><p style="margin-top:calc(8*var(--u))">de analista a gerente, querendo assento na decisão.</p></div>
+</div></div></section>
+
+<!-- CONCORRÊNCIA -->
+<section class="slide"><div class="s">
+<div class="ey">concorrência</div><h2>Cada escola já ocupa um território</h2>
+<div class="body" style="display:grid;grid-template-columns:1fr calc(400*var(--u));gap:calc(48*var(--u));align-items:center">
+<div class="grid g3" style="gap:calc(14*var(--u))">
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>FGV</h3><p>aspiração e estilo de vida</p></div>
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>USP/Esalq</h3><p>certificado USP e funil com isca</p></div>
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>Poli USP PRO</h3><p>linhagem Poli e urgência</p></div>
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>IPOG</h3><p>combo de certificações</p></div>
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>FAAP · FIA</h3><p>desconto no título</p></div>
+<div class="card" style="background:var(--g1);padding:calc(24*var(--u))"><h3>FM2S · CEUB</h3><p>preço e bolsa</p></div>
+</div>
+<div class="card navy" style="padding:calc(36*var(--u));position:relative;overflow:hidden">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(300*var(--u));height:calc(290*var(--u));right:calc(-60*var(--u));bottom:calc(-60*var(--u))"></span>
+<div class="ey" style="color:var(--eql)">território livre</div>
+<h3 style="margin-top:calc(16*var(--u));font-size:calc(34*var(--u));line-height:1.12">A carreira de quem já sabe fazer e quer decidir.</h3>
+<p style="margin-top:calc(16*var(--u))">Nenhuma das 46 peças únicas analisadas fala de promoção ou de assumir mais responsabilidade.</p></div>
+</div></div></section>
+
+<!-- MERCADO X VANZOLINI -->
+<section class="slide dk"><div class="s">
+<div class="ey">o que vamos mostrar</div><h2>O mercado fala do curso. Nós vamos falar da pessoa.</h2>
+<div class="body grid g2" style="gap:calc(64*var(--u));align-items:start">
+<div><p class="lbl" style="color:var(--soft)">nos anúncios do mercado</p>
+<div style="margin-top:calc(22*var(--u));display:grid;gap:calc(20*var(--u))">
+<div><div class="row"><span>IA no nome ou no texto</span><b>48%</b></div><div class="bar"><i style="width:48%"></i></div></div>
+<div><div class="row"><span>Urgência e prazo</span><b>46%</b></div><div class="bar"><i style="width:46%"></i></div></div>
+<div><div class="row"><span>Credencial em selo pequeno</span><b>43%</b></div><div class="bar"><i style="width:43%"></i></div></div>
+<div><div class="row"><span>Preço e desconto no título</span><b>30%</b></div><div class="bar"><i style="width:30%"></i></div></div>
+<div><div class="row"><span>Carreira e promoção</span><b>0%</b></div><div class="bar"><i style="width:1%"></i></div></div>
+</div></div>
+<div><p class="lbl" style="color:var(--eql)">na campanha Vanzolini</p>
+<div style="margin-top:calc(22*var(--u));display:grid;gap:calc(12*var(--u))">
+<div class="card" style="padding:calc(18*var(--u)) calc(26*var(--u))"><h3>A pessoa assumindo o próximo passo</h3></div>
+<div class="card" style="padding:calc(18*var(--u)) calc(26*var(--u))"><h3>Personagem em cena, nunca retrato</h3></div>
+<div class="card" style="padding:calc(18*var(--u)) calc(26*var(--u))"><h3>Coordenação Poli-USP em destaque</h3></div>
+<div class="card" style="padding:calc(18*var(--u)) calc(26*var(--u))"><h3>Business Case real como prova</h3></div>
+</div></div></div>
+<div class="src">55 prints de anúncios de 17 escolas no Instagram, 46 peças únicas, outubro de 2026</div>
+</div></section>
+
+<!-- DIV PONTO DE PARTIDA -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">ponto de partida</div><h2>O que a campanha de 2026 ensinou</h2></div></section>
+
+<!-- O QUE JÁ FUNCIONA -->
+<section class="slide"><div class="s">
+<div class="ey">o que já funciona</div><h2>Uma ideia por peça, vídeo e e-mail para quem engaja</h2>
+<div class="body grid g4" style="align-content:center;gap:calc(40*var(--u))">
+<div class="kpi"><span class="big" style="color:var(--eq)">R$ 5,86</span><p>de custo por lead no anúncio do EQ com uma frase só.</p></div>
+<div class="kpi"><span class="big" style="color:var(--eq)">2x</span><p>mais cliques no vídeo do que nas peças estáticas.</p></div>
+<div class="kpi"><span class="big" style="color:var(--eq)">9,9%</span><p>de conversão na LP do LIEE, quase o dobro das outras.</p></div>
+<div class="kpi"><span class="big" style="color:var(--eq)">1,8x</span><p>a média do setor no clique do primeiro e-mail da régua.</p></div>
+</div>
+<div class="src">Meta Ads e RD Station, janeiro a outubro de 2026</div>
+</div></section>
+
+<!-- O QUE VAMOS EVOLUIR -->
+<section class="slide lt"><div class="s">
+<div class="ey">o que vamos evoluir</div><h2>Quatro ajustes que levamos para 2027</h2>
+<div class="body grid g2" style="gap:calc(20*var(--u));align-content:center">
+<div class="card" style="display:flex;gap:calc(24*var(--u));align-items:flex-start"><div class="big" style="font-size:calc(36*var(--u));color:var(--ia)">01</div><div><h3>Uma ideia por peça</h3><p style="margin-top:calc(8*var(--u))">Sair da lista de itens e falar uma coisa só, grande.</p></div></div>
+<div class="card" style="display:flex;gap:calc(24*var(--u));align-items:flex-start"><div class="big" style="font-size:calc(36*var(--u));color:var(--ia)">02</div><div><h3>Vídeo com verba própria</h3><p style="margin-top:calc(8*var(--u))">Hoje recebe 5% da verba e entrega o dobro de cliques.</p></div></div>
+<div class="card" style="display:flex;gap:calc(24*var(--u));align-items:flex-start"><div class="big" style="font-size:calc(36*var(--u));color:var(--ia)">03</div><div><h3>Oferta no lugar certo</h3><p style="margin-top:calc(8*var(--u))">Desconto e parcela no fundo do funil, não no topo.</p></div></div>
+<div class="card" style="display:flex;gap:calc(24*var(--u));align-items:flex-start"><div class="big" style="font-size:calc(36*var(--u));color:var(--ia)">04</div><div><h3>Régua focada em quem engaja</h3><p style="margin-top:calc(8*var(--u))">Menos envios para a base fria, mais contato com quem clicou.</p></div></div>
+</div></div></section>
+
+<!-- RASTREIO -->
+<section class="slide dk"><div class="s">
+<div class="ey">melhoria no acompanhamento</div><h2>Saber qual anúncio gera matrícula</h2>
+<div class="body" style="display:grid;grid-template-columns:1fr calc(380*var(--u));gap:calc(56*var(--u));align-items:center">
+<div style="display:flex;align-items:center;gap:calc(12*var(--u))">
+<div class="card" style="flex:1;text-align:center;padding:calc(26*var(--u)) calc(12*var(--u))"><h3>Anúncio</h3><p style="margin-top:calc(6*var(--u))">ID no link</p></div>
+<span style="font-size:calc(26*var(--u));color:var(--eql)">→</span>
+<div class="card" style="flex:1;text-align:center;padding:calc(26*var(--u)) calc(12*var(--u))"><h3>Lead</h3><p style="margin-top:calc(6*var(--u))">origem no RD</p></div>
+<span style="font-size:calc(26*var(--u));color:var(--eql)">→</span>
+<div class="card" style="flex:1;text-align:center;padding:calc(26*var(--u)) calc(12*var(--u))"><h3>Negócio</h3><p style="margin-top:calc(6*var(--u))">origem no CRM</p></div>
+<span style="font-size:calc(26*var(--u));color:var(--eql)">→</span>
+<div class="card" style="flex:1;text-align:center;padding:calc(26*var(--u)) calc(12*var(--u));background:var(--eq);border-color:var(--eq)"><h3>Matrícula</h3><p style="margin-top:calc(6*var(--u));color:#E3FFF4">por anúncio</p></div>
+</div>
+<div><div class="kpi"><span class="big" style="color:var(--eql);font-size:calc(54*var(--u));white-space:nowrap">47% → 80%+</span><p>das matrículas com origem identificada.</p></div>
+<p style="margin-top:calc(28*var(--u));font-size:calc(17*var(--u));line-height:1.45;color:var(--soft)">Depende do projeto de tagueamento, que corre em paralelo à campanha.</p></div>
+</div></div></section>
+
+<!-- LPS -->
+<section class="slide"><div class="s">
+<div class="ey">landing pages</div><h2>A base é boa. A melhoria é converter já no topo.</h2>
+<div class="body grid g3" style="gap:calc(24*var(--u));align-content:center">
+<div class="card" style="background:var(--g1)"><h3>Formulário na primeira dobra</h3><p>Com botão fixo no celular e o campo de e-mail como “melhor e-mail”.</p></div>
+<div class="card" style="background:var(--g1)"><h3>Oferta num bloco só</h3><p>Preço, prazo e 24x sem juros no boleto, com o desconto para ex-alunos. O bloco do LIEE, que converte 9,9%, vai para os três.</p></div>
+<div class="card" style="background:var(--g1)"><h3>Ingresso certo em cada curso</h3><p>EQ e IAGE com a data da turma. LIEE com ingresso a cada módulo, por ser circular.</p></div>
+<div class="card" style="background:var(--g1)"><h3>Prova do próprio MBA</h3><p>Trechos anônimos da pesquisa de satisfação interna e o Business Case, no lugar de depoimentos de cursos curtos.</p></div>
+<div class="card" style="background:var(--g1)"><h3>Pessoas de frente, em cena</h3><p>Personagem olhando para quem lê, no mesmo recorte e na mesma luz do KV.</p></div>
+<div class="card navy"><h3>Selos e fonte única</h3><p>Selo do MEC com QR code de consulta e uma fonte única para turma e oferta em todas as páginas.</p></div>
+</div></div></section>
+
+<!-- DIV ESTRATÉGIA -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">estratégia</div><h2>Uma ideia para os três MBAs</h2></div></section>
+
+<!-- CONCEITO -->
+<section class="slide dk"><div class="s" style="justify-content:center">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(640*var(--u));height:calc(620*var(--u));right:calc(-60*var(--u));top:calc(50*var(--u))"></span>
+<div class="ey">conceito</div>
+<p style="font-family:'Work Sans';font-size:calc(150*var(--u));font-weight:600;letter-spacing:-.04em;line-height:1;margin-top:calc(16*var(--u))">Assuma.</p>
+<div style="margin-top:calc(40*var(--u));display:grid;gap:calc(10*var(--u));font-family:'Work Sans';font-size:calc(32*var(--u));font-weight:500;line-height:1.2">
+<p>Assuma a <b style="color:var(--eql);font-weight:600">liderança</b> da qualidade.</p>
+<p>Assuma a <b style="color:var(--ial);font-weight:600">estratégia</b> dos projetos com IA.</p>
+<p>Assuma as <b style="color:var(--lil);font-weight:600">decisões</b> que movem o negócio.</p></div>
+<p style="margin-top:calc(36*var(--u));font-size:calc(20*var(--u));color:var(--soft)">No lugar do TCC, um Business Case real.</p>
+</div></section>
+
+<!-- TENSÃO -->
+<section class="slide"><div class="s">
+<div class="ey">por que funciona</div><h2>Foi promovido por saber fazer. Agora quer decidir.</h2>
+<div class="body grid g2" style="gap:calc(56*var(--u));align-items:center">
+<p style="font-size:calc(24*var(--u));line-height:1.5;color:var(--mut)">O aluno da Vanzolini é técnico, certificado e tem anos de casa. Quer crescer onde já está. O “Assuma” fala com quem já tem a competência e quer o lugar.</p>
+<div class="card navy" style="padding:calc(40*var(--u));position:relative;overflow:hidden">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(260*var(--u));height:calc(250*var(--u));right:calc(-40*var(--u));bottom:calc(-50*var(--u))"></span>
+<div class="ey" style="color:var(--eql)">a marca garante</div>
+<p style="font-family:'Work Sans';font-size:calc(32*var(--u));font-weight:600;line-height:1.2;margin-top:calc(16*var(--u));color:#fff!important">Força na experiência. Sempre à frente, inovando.</p></div>
+</div></div></section>
+
+<!-- PERFIS LINKEDIN: NÚMEROS -->
+<section class="slide lt"><div class="s">
+<div class="ey">23 perfis de matriculados no LinkedIn</div><h2>Quem entra no MBA já está subindo</h2>
+<div class="body grid g4" style="align-content:center;gap:calc(40*var(--u))">
+<div class="kpi"><span class="big" style="color:var(--nv)">14 de 23</span><p>já lideram equipes: supervisão, coordenação, gerência ou diretoria.</p><div class="bar"><i style="width:61%"></i></div></div>
+<div class="kpi"><span class="big" style="color:var(--nv)">14 de 23</span><p>têm mais de dez anos de carreira.</p><div class="bar"><i style="width:61%"></i></div></div>
+<div class="kpi"><span class="big" style="color:var(--eq)">10 de 23</span><p>trocaram de cadeira em 2025 e 2026 ou estão se recolocando.</p><div class="bar"><i style="width:43%;background:var(--eq)"></i></div></div>
+<div class="kpi"><span class="big" style="color:var(--ia)">2</span><p>já tinham outro MBA e voltaram para somar IA e gestão.</p></div>
+</div>
+<div class="src">Amostra de 23 matriculados de 2026 nos três MBAs, escolhida pela proporção de turma, mês de matrícula e preço</div>
+</div></section>
+
+<!-- PERFIS LINKEDIN: CASOS -->
+<section class="slide"><div class="s">
+<div class="ey">quatro perfis</div><h2>A próxima cadeira, na vida real</h2>
+<div class="body grid g4" style="gap:calc(20*var(--u))">
+<div class="card c-eq" style="background:var(--g1);display:flex;flex-direction:column"><div class="ini" style="background:var(--eq)">1</div><h3 style="margin-top:calc(20*var(--u))">Matriculado 1</h3><p class="cap" style="margin-top:calc(4*var(--u))">Coordenadora de Qualidade · indústria de embalagens</p><p style="margin-top:calc(16*var(--u))">De analista a líder e a coordenadora durante o MBA, em 18 meses.</p><div style="margin-top:auto;padding-top:calc(20*var(--u));display:flex;justify-content:space-between;align-items:center"><span class="pill cc">EQ</span></div></div>
+<div class="card c-eq" style="background:var(--g1);display:flex;flex-direction:column"><div class="ini" style="background:var(--eq)">2</div><h3 style="margin-top:calc(20*var(--u))">Matriculado 2</h3><p class="cap" style="margin-top:calc(4*var(--u))">Supervisor de Qualidade · indústria de alimentos</p><p style="margin-top:calc(16*var(--u))">Oito anos na empresa, Green Belt, mirando a coordenação.</p><div style="margin-top:auto;padding-top:calc(20*var(--u));display:flex;justify-content:space-between;align-items:center"><span class="pill cc">EQ</span></div></div>
+<div class="card c-ia" style="background:var(--g1);display:flex;flex-direction:column"><div class="ini" style="background:var(--ia)">3</div><h3 style="margin-top:calc(20*var(--u))">Matriculado 3</h3><p class="cap" style="margin-top:calc(4*var(--u))">Gerente Sênior de Suprimentos · energia renovável</p><p style="margin-top:calc(16*var(--u))">Trocou de empresa em outubro de 2026, subindo para gerente sênior.</p><div style="margin-top:auto;padding-top:calc(20*var(--u));display:flex;justify-content:space-between;align-items:center"><span class="pill cc">IAGE</span></div></div>
+<div class="card c-li" style="background:var(--g1);display:flex;flex-direction:column"><div class="ini" style="background:var(--li)">4</div><h3 style="margin-top:calc(20*var(--u))">Matriculado 4</h3><p class="cap" style="margin-top:calc(4*var(--u))">Ex-gerente de P&amp;D · indústria de frutas</p><p style="margin-top:calc(16*var(--u))">Matriculou-se um mês depois de deixar a gerência, para o próximo passo.</p><div style="margin-top:auto;padding-top:calc(20*var(--u));display:flex;justify-content:space-between;align-items:center"><span class="pill cc">LIEE</span></div></div>
+</div></div></section>
+
+<!-- PÚBLICOS -->
+<section class="slide lt"><div class="s">
+<div class="ey">um público por curso</div><h2>Cada MBA com seu público, sua frase e seus personagens</h2>
+<div class="body grid g3">
+<div class="card c-eq" style="display:flex;flex-direction:column">
+<div class="faces"><img class="face" src="assets/rostos/MBA-EQ-M1.jpg" alt="Yumi"><img class="face" src="assets/rostos/MBA-EQ-H1.jpg" alt="Otávio"></div>
+<p class="lbl" style="margin-top:calc(20*var(--u));color:var(--eq)">Engenharia da Qualidade</p>
+<p style="margin-top:calc(8*var(--u))">Especialista técnico que quer passar de quem fiscaliza a quem decide.</p>
+<p style="margin-top:auto;padding-top:calc(20*var(--u));font-family:'Work Sans';font-size:calc(24*var(--u));font-weight:600;line-height:1.2;color:var(--ink)">Assuma a <span style="color:var(--eq)">liderança</span> da qualidade.</p></div>
+<div class="card c-ia" style="display:flex;flex-direction:column">
+<div class="faces"><img class="face" src="assets/rostos/MBA-GEP-H1.jpg" alt="Paulo"><img class="face" src="assets/rostos/MBA-GEP-M1.jpg" alt="Denise"></div>
+<p class="lbl" style="margin-top:calc(20*var(--u));color:var(--ia)">IA Aplicada a Projetos</p>
+<p style="margin-top:calc(8*var(--u))">Gerente de projetos que quer comandar o portfólio, com a IA a favor.</p>
+<p style="margin-top:auto;padding-top:calc(20*var(--u));font-family:'Work Sans';font-size:calc(24*var(--u));font-weight:600;line-height:1.2;color:var(--ink)">Assuma a <span style="color:var(--ia)">estratégia</span> dos projetos com IA.</p></div>
+<div class="card c-li" style="display:flex;flex-direction:column">
+<div class="faces"><img class="face" src="assets/rostos/MBA-LIE-M1.jpg" alt="Beatriz"><img class="face" src="assets/rostos/MBA-LIE-H1.jpg" alt="Gustavo"></div>
+<p class="lbl" style="margin-top:calc(20*var(--u));color:var(--li)">Liderança, IA e Execução</p>
+<p style="margin-top:calc(8*var(--u))">Analista sênior a gerente que quer assento na mesa de decisão.</p>
+<p style="margin-top:auto;padding-top:calc(20*var(--u));font-family:'Work Sans';font-size:calc(24*var(--u));font-weight:600;line-height:1.2;color:var(--ink)">Assuma as <span style="color:var(--li)">decisões</span> que movem o negócio.</p></div>
+</div></div></section>
+
+<!-- DIFERENCIAIS -->
+<section class="slide"><div class="s">
+<div class="ey">o que sustenta a promessa</div><h2>Quase 60 anos de experiência, olhando à frente</h2>
+<div class="body grid g4" style="gap:calc(20*var(--u));align-content:center">
+<div class="card" style="background:var(--g1)"><div class="big" style="font-size:calc(46*var(--u));color:var(--nv)">1967</div><p style="margin-top:calc(14*var(--u))">Nascida na Engenharia de Produção da Poli-USP, com coordenação Poli-USP.</p></div>
+<div class="card" style="background:var(--g1)"><div class="big" style="font-size:calc(46*var(--u));color:var(--nv)">60</div><p style="margin-top:calc(14*var(--u))">anos da Fundação Vanzolini, com logotipo comemorativo nos MBAs.</p></div>
+<div class="card navy"><div class="big" style="font-size:calc(46*var(--u));color:var(--eql)">Business Case</div><p style="margin-top:calc(14*var(--u))">real, no lugar do TCC, feito sobre a empresa do aluno.</p></div>
+<div class="card" style="background:var(--g1)"><div class="big" style="font-size:calc(46*var(--u));color:var(--ia)">IA</div><p style="margin-top:calc(14*var(--u))">dentro dos três MBAs, com professores de mercado e turmas de até 50.</p></div>
+</div></div></section>
+
+<!-- PALAVRAS -->
+<section class="slide lt"><div class="s">
+<div class="ey">tom de voz</div><h2>As palavras da campanha</h2>
+<div class="body grid g2" style="gap:calc(56*var(--u))">
+<div><p class="lbl" style="color:var(--eq);margin-bottom:calc(20*var(--u))">usamos</p>
+<span class="chip">assuma</span><span class="chip">carreira</span><span class="chip">liderança</span><span class="chip">decisão</span><span class="chip">Business Case</span><span class="chip">aplicado</span><span class="chip">medido</span><span class="chip">Coordenação Poli-USP</span><span class="chip">Matrículas abertas</span></div>
+<div><p class="lbl" style="color:var(--mut);margin-bottom:calc(20*var(--u))">deixamos de fora</p>
+<span class="chip no">diploma</span><span class="chip no">certificado USP</span><span class="chip no">promessa de salário</span><span class="chip no">você está ficando para trás</span><span class="chip no">domine</span><span class="chip no">transforme</span><span class="chip no">desconto no título</span></div>
+</div></div></section>
+
+<!-- DIV CRIAÇÃO -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">criação</div><h2>Cinco layouts, uma campanha</h2></div></section>
+
+<!-- VARIAÇÃO -->
+<section class="slide"><div class="s">
+<div class="ey">estratégia de criação</div><h2>A força está na variação das artes</h2>
+<p class="lead">Os cinco layouts rodam juntos, com a mesma frase, a mesma marca e o mesmo personagem.</p>
+<div class="body grid g3" style="gap:calc(24*var(--u));align-content:center">
+<div class="card" style="background:var(--g1)"><h3>Dinamismo</h3><p>Arte nova no feed a cada duas a quatro semanas, sem cansar quem já viu.</p></div>
+<div class="card" style="background:var(--g1)"><h3>Diferenciação</h3><p>As escolas repetem um molde só. Variar mantém a Vanzolini reconhecível e diferente.</p></div>
+<div class="card navy"><h3>Etapa do funil</h3><p>Cada layout tem um papel: chamar atenção, mostrar o ganho ou converter.</p></div>
+</div></div></section>
+
+<!-- 4 LAYOUTS JUNTOS -->
+<section class="slide dk"><div class="s">
+<div class="ey">os cinco layouts</div><h2 style="font-size:calc(38*var(--u))">Mesma frase, cinco formas de dizer</h2>
+<div class="body grid g5" style="margin-top:calc(34*var(--u));gap:calc(22*var(--u));align-content:start"><div><img class="pz" src="assets/pecas-v3/L1_EQ-A.jpg" alt="Personagem e V" loading="lazy"><h3 style="margin-top:calc(16*var(--u));font-size:calc(19*var(--u))">Personagem e V</h3></div><div><img class="pz" src="assets/pecas-v3/L2_EQ-A.jpg" alt="Título em destaque" loading="lazy"><h3 style="margin-top:calc(16*var(--u));font-size:calc(19*var(--u))">Título em destaque</h3></div><div><img class="pz" src="assets/pecas-v3/L3_EQ.jpg" alt="Fundo claro" loading="lazy"><h3 style="margin-top:calc(16*var(--u));font-size:calc(19*var(--u))">Fundo claro</h3></div><div><img class="pz" src="assets/pecas-v3/L4A_EQ.jpg" alt="Chamadas" loading="lazy"><h3 style="margin-top:calc(16*var(--u));font-size:calc(19*var(--u))">Chamadas</h3></div><div><img class="pz" src="assets/pecas-v3/L5_EQ-F1.jpg" alt="Cena de campo" loading="lazy"><h3 style="margin-top:calc(16*var(--u));font-size:calc(19*var(--u))">Cena de campo</h3></div></div></div></section>
+
+<section class="slide lt"><div class="s">
+<div class="lh"><div><div class="ey">layout 1</div><h2>Personagem e V</h2></div><div><p class="lead">O V da Fundação Vanzolini atrás do personagem, que olha de frente e anda em direção a quem lê. Lembra a marca em cada peça.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">topo e meio do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L1_EQ-A.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L1_IAGE-A.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L1_LIEE-A.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide lt"><div class="s">
+<div class="ey">layout 1 · variações</div><h2 style="font-size:calc(36*var(--u))">Três cenas por curso, e a versão para ex-aluno</h2>
+<div class="body" style="margin-top:calc(26*var(--u))"><div class="grid g3" style="gap:calc(26*var(--u));align-items:start"><div><div class="lbl" style="color:var(--mut);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em Engenharia da Qualidade</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L1_EQ-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L1_EQ-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L1_EQ-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div><div><div class="lbl" style="color:var(--mut);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em IA Aplicada</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L1_IAGE-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L1_IAGE-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L1_IAGE-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div><div><div class="lbl" style="color:var(--mut);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em Liderança, IA e Execução</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L1_LIEE-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L1_LIEE-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L1_LIEE-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div></div>
+<div style="display:flex;align-items:center;gap:calc(26*var(--u));margin-top:calc(22*var(--u))"><div style="display:flex;gap:calc(10*var(--u))"><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L1x_EQ-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L1x_IAGE-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L1x_LIEE-A.jpg" alt="" loading="lazy"></div></div><p class="lead" style="margin:0;font-size:calc(17*var(--u));max-width:calc(620*var(--u))">Versão ex-aluno: o selo de 20% de desconto entra no lugar do bloco de oferta, sem mexer no resto da arte.</p></div></div>
+</div></section>
+
+<section class="slide dk"><div class="s">
+<div class="lh"><div><div class="ey">layout 1 · animação</div><h2>A mesma arte em movimento</h2></div><div><p class="lead">Seis segundos. O V se desenha, o personagem entra, a frase aparece linha a linha e o botão fecha. O último quadro é a peça estática aprovada.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">4:5 · feed</span></div></div></div>
+<div class="body" style="display:flex;gap:calc(48*var(--u));justify-content:center;align-items:flex-start;margin-top:calc(26*var(--u))"><div><div class="vid"><video src="assets/anim/L1_EQ-A.mp4" poster="assets/anim/L1_EQ-A_poster.png" muted loop playsinline autoplay preload="metadata"></video></div><p class="cap" style="text-align:center">Engenharia da Qualidade</p></div><div><div class="vid"><video src="assets/anim/L1_IAGE-A.mp4" poster="assets/anim/L1_IAGE-A_poster.png" muted loop playsinline autoplay preload="metadata"></video></div><p class="cap" style="text-align:center">IA Aplicada</p></div><div><div class="vid"><video src="assets/anim/L1_LIEE-A.mp4" poster="assets/anim/L1_LIEE-A_poster.png" muted loop playsinline autoplay preload="metadata"></video></div><p class="cap" style="text-align:center">Liderança, IA e Execução</p></div></div>
+</div></section>
+
+<section class="slide dk"><div class="s">
+<div class="lh"><div><div class="ey">layout 2</div><h2>Título em destaque</h2></div><div><p class="lead">A palavra do curso ocupa a largura toda e o personagem aparece de frente, em cena. Feito para parar a rolagem.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">topo do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L2_EQ-A.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L2_IAGE-A.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L2_LIEE-A.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide dk"><div class="s">
+<div class="ey">layout 2 · variações</div><h2 style="font-size:calc(36*var(--u))">Três cenas por curso, o nome do curso em duas posições e o selo ex-aluno</h2>
+<div class="body" style="margin-top:calc(26*var(--u))"><div class="grid g3" style="gap:calc(26*var(--u));align-items:start"><div><div class="lbl" style="color:var(--soft);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em Engenharia da Qualidade</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L2_EQ-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L2_EQ-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L2_EQ-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div><div><div class="lbl" style="color:var(--soft);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em IA Aplicada</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L2_IAGE-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L2_IAGE-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L2_IAGE-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div><div><div class="lbl" style="color:var(--soft);margin-bottom:calc(8*var(--u));font-size:calc(11*var(--u))">MBA em Liderança, IA e Execução</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:calc(8*var(--u))"><div><img class="pz" src="assets/pecas-v3/L2_LIEE-A.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena A</p></div><div><img class="pz" src="assets/pecas-v3/L2_LIEE-B.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena B</p></div><div><img class="pz" src="assets/pecas-v3/L2_LIEE-C.jpg" alt="" loading="lazy"><p class="cap" style="font-size:calc(11*var(--u));margin-top:calc(6*var(--u));text-align:center">Cena C</p></div></div></div></div>
+<div style="display:flex;align-items:center;gap:calc(26*var(--u));margin-top:calc(22*var(--u))"><div style="display:flex;gap:calc(10*var(--u))"><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2az_EQ-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2az_IAGE-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2az_LIEE-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2s_EQ-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2s_IAGE-A.jpg" alt="" loading="lazy"></div><div style="width:calc(112*var(--u))"><img class="pz" src="assets/pecas-v3/L2s_LIEE-A.jpg" alt="" loading="lazy"></div></div><p class="lead" style="margin:0;font-size:calc(17*var(--u));max-width:calc(380*var(--u))">Nome do curso no azul (três primeiras) e versão com selo de 20% para ex-aluno (três últimas).</p></div></div>
+</div></section>
+
+<section class="slide "><div class="s">
+<div class="lh"><div><div class="ey">layout 3</div><h2>Fundo claro</h2></div><div><p class="lead">Luz natural e o personagem interagindo com o ganho, em escala real: a escada, a peça que fecha o projeto, a mesa de decisão.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">meio do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L3_EQ.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L3_IAGE.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L3_LIEE.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide dk"><div class="s">
+<div class="lh"><div><div class="ey">layout 4 · modelo A</div><h2>Chamadas em lista</h2></div><div><p class="lead">O curso como herói, com itens concretos e a oferta. O formato que mais converteu em 2026.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">fundo do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L4A_EQ.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L4A_IAGE.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L4A_LIEE.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide lt"><div class="s">
+<div class="lh"><div><div class="ey">layout 4 · modelo B</div><h2>Chamadas em boxes</h2></div><div><p class="lead">Os diferenciais em caixas: coordenação, Business Case, formato e professores. Leitura rápida para quem já está decidindo.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">fundo do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L4B_EQ.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L4B_IAGE.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L4B_LIEE.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide dk"><div class="s">
+<div class="lh"><div><div class="ey">layout 4 · modelo C</div><h2>Chamadas numeradas</h2></div><div><p class="lead">Três itens numerados e a oferta, em uma leitura só. A versão mais enxuta do fundo de funil.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">fundo do funil</span></div></div></div>
+<div class="grid g3 lp">
+<img class="pz" src="assets/pecas-v3/L4C_EQ.jpg" alt="EQ" loading="lazy"><img class="pz" src="assets/pecas-v3/L4C_IAGE.jpg" alt="IAGE" loading="lazy"><img class="pz" src="assets/pecas-v3/L4C_LIEE.jpg" alt="LIEE" loading="lazy"></div>
+</div></section>
+
+<section class="slide lt"><div class="s">
+<div class="lh"><div><div class="ey">layout 5</div><h2>Cena de campo</h2></div><div><p class="lead">O personagem no ambiente de trabalho, em foto cheia: a fábrica, a sala de projetos, a mesa de decisão. Duas situações por curso.</p><div style="margin-top:calc(14*var(--u))"><span class="pill">topo e meio do funil</span></div></div></div>
+<div class="grid g6 lp" style="width:calc(1120*var(--u));gap:calc(16*var(--u))"><div><img class="pz" src="assets/pecas-v3/L5_EQ-F1.jpg" alt="" loading="lazy"></div><div><img class="pz" src="assets/pecas-v3/L5_EQ-F2.jpg" alt="" loading="lazy"></div><div><img class="pz" src="assets/pecas-v3/L5_IAGE-F1.jpg" alt="" loading="lazy"></div><div><img class="pz" src="assets/pecas-v3/L5_IAGE-F2.jpg" alt="" loading="lazy"></div><div><img class="pz" src="assets/pecas-v3/L5_LIEE-F1.jpg" alt="" loading="lazy"></div><div><img class="pz" src="assets/pecas-v3/L5_LIEE-F2.jpg" alt="" loading="lazy"></div></div>
+</div></section>
+
+<section class="slide lt"><div class="s">
+<div class="ey">layouts no funil</div><h2>Cada etapa com o layout que faz o trabalho</h2>
+<div class="body grid g3" style="gap:calc(24*var(--u));align-content:center">
+<div class="card" style="display:flex;gap:calc(22*var(--u));align-items:center">
+<img src="assets/pecas-v3/L2_IAGE-A.jpg" alt="" style="width:calc(116*var(--u));border-radius:calc(8*var(--u));flex:none">
+<div><span class="pill">topo</span><h3 style="margin-top:calc(12*var(--u))">Parar a rolagem</h3><p style="margin-top:calc(6*var(--u))">Título em destaque, Personagem e V, cena de campo e vídeo.</p></div></div>
+<div class="card" style="display:flex;gap:calc(22*var(--u));align-items:center">
+<img src="assets/pecas-v3/L3_IAGE.jpg" alt="" style="width:calc(116*var(--u));border-radius:calc(8*var(--u));flex:none">
+<div><span class="pill">meio</span><h3 style="margin-top:calc(12*var(--u))">Mostrar o ganho</h3><p style="margin-top:calc(6*var(--u))">Fundo claro, carrossel e conteúdo para baixar.</p></div></div>
+<div class="card navy" style="display:flex;gap:calc(22*var(--u));align-items:center">
+<img src="assets/pecas-v3/L4A_IAGE.jpg" alt="" style="width:calc(116*var(--u));border-radius:calc(8*var(--u));flex:none">
+<div><span class="pill" style="background:rgba(255,255,255,.14);color:#fff">fundo</span><h3 style="margin-top:calc(12*var(--u))">Converter</h3><p style="margin-top:calc(6*var(--u))">Chamadas com ingresso, parcela e prazo.</p></div></div>
+</div>
+<p class="lead" style="margin-top:calc(24*var(--u))">De três a cinco artes por curso no ar, trocando a cada duas a quatro semanas.</p>
+</div></section>
+
+<!-- FORMATOS -->
+<section class="slide dk"><div class="s">
+<div class="ey">formatos</div><h2>Peça-mãe em 4:5, com os demais formatos derivados</h2>
+<p class="lead">Começamos em 4:5. Com os layouts aprovados, derivamos 1:1, 9:16, Reels e Display, sempre da mesma arte.</p>
+<div class="body" style="display:flex;gap:calc(48*var(--u));align-items:flex-end;justify-content:center;margin-top:calc(24*var(--u))"><div style="width:calc(250*var(--u))"><img class="pz" src="assets/pecas-v3/L1_EQ-A.jpg" alt="4:5"><p class="cap" style="text-align:center">4:5 · feed, peça-mãe</p></div><div style="width:calc(250*var(--u))"><img class="pz" src="assets/pecas-v3/L1_IAGE-A.jpg" alt="4:5"><p class="cap" style="text-align:center">4:5 · stories e Reels com a mesma arte</p></div><div style="width:calc(250*var(--u))"><img class="pz" src="assets/pecas-v3/L1_LIEE-A.jpg" alt="4:5"><p class="cap" style="text-align:center">1:1, 9:16 e Display derivam dela</p></div></div></div></section>
+
+<section class="slide lt"><div class="s">
+<div class="lh"><div><div class="ey">landing pages</div><h2>Uma página que reúne os três MBAs</h2></div><div><p class="lead">A Home compara os cursos lado a lado e leva cada pessoa para a página do seu MBA. Mesmo layout, mesma frase, o personagem de frente.</p></div></div>
+<div class="body" style="display:flex;gap:calc(40*var(--u));justify-content:center;align-items:flex-start;margin-top:calc(26*var(--u))">
+<div style="width:calc(700*var(--u))"><img class="pz" src="assets/lps/Home-desk.jpg" alt="Home desktop"><p class="cap" style="text-align:center">Desktop</p></div>
+<div style="width:calc(194*var(--u));height:calc(420*var(--u));overflow:hidden;border-radius:calc(12*var(--u));box-shadow:0 calc(18*var(--u)) calc(40*var(--u)) rgba(21,18,63,.22)"><img src="assets/lps/Home-mob.jpg" alt="Home celular" style="display:block;width:100%"></div>
+</div></div></section>
+
+<section class="slide dk"><div class="s">
+<div class="lh"><div><div class="ey">landing pages</div><h2>Uma página por curso</h2></div><div><p class="lead">Promessa, o que muda na carreira, grade, coordenação, investimento, dúvidas e formulário, na mesma ordem nos três.</p></div></div>
+<div class="grid g3" style="margin-top:calc(26*var(--u));gap:calc(28*var(--u));align-items:start"><div><img class="pz" src="assets/lps/EQ-desk.jpg" alt="EQ desktop"><div style="margin-top:calc(14*var(--u));display:flex;gap:calc(14*var(--u));align-items:flex-start"><div style="width:calc(100*var(--u));height:calc(216*var(--u));overflow:hidden;border-radius:calc(10*var(--u));flex:none;box-shadow:0 calc(12*var(--u)) calc(28*var(--u)) rgba(0,0,0,.4)"><img src="assets/lps/EQ-mob.jpg" alt="EQ celular" style="display:block;width:100%"></div><div><h3 style="font-size:calc(20*var(--u))">Engenharia da Qualidade</h3><p class="cap">Início 23/03/2027</p></div></div></div><div><img class="pz" src="assets/lps/IAGE-desk.jpg" alt="IAGE desktop"><div style="margin-top:calc(14*var(--u));display:flex;gap:calc(14*var(--u));align-items:flex-start"><div style="width:calc(100*var(--u));height:calc(216*var(--u));overflow:hidden;border-radius:calc(10*var(--u));flex:none;box-shadow:0 calc(12*var(--u)) calc(28*var(--u)) rgba(0,0,0,.4)"><img src="assets/lps/IAGE-mob.jpg" alt="IAGE celular" style="display:block;width:100%"></div><div><h3 style="font-size:calc(20*var(--u))">IA Aplicada à Gestão Estratégica de Projetos</h3><p class="cap">Início 25/03/2027</p></div></div></div><div><img class="pz" src="assets/lps/LIEE-desk.jpg" alt="LIEE desktop"><div style="margin-top:calc(14*var(--u));display:flex;gap:calc(14*var(--u));align-items:flex-start"><div style="width:calc(100*var(--u));height:calc(216*var(--u));overflow:hidden;border-radius:calc(10*var(--u));flex:none;box-shadow:0 calc(12*var(--u)) calc(28*var(--u)) rgba(0,0,0,.4)"><img src="assets/lps/LIEE-mob.jpg" alt="LIEE celular" style="display:block;width:100%"></div><div><h3 style="font-size:calc(20*var(--u))">Liderança, IA e Execução Estratégica</h3><p class="cap">Ingresso a cada módulo</p></div></div></div></div>
+</div></section>
+
+<section class="slide"><div class="s">
+<div class="ey">sistema visual</div><h2>Base Vanzolini, a cor de cada curso no acento</h2>
+<div class="body grid g3" style="gap:calc(28*var(--u))">
+<div class="c-eq"><div style="height:calc(170*var(--u));border-radius:calc(18*var(--u));background:linear-gradient(165deg,#2E2970,#17144A);position:relative;overflow:hidden"><span class="vsym fio" style="color:var(--ca);width:calc(220*var(--u));height:calc(210*var(--u));right:calc(-30*var(--u));bottom:calc(-40*var(--u))"></span><div class="faces" style="position:absolute;left:calc(22*var(--u));bottom:calc(20*var(--u))"><img class="face sm" src="assets/rostos/MBA-EQ-M1.jpg" alt="Yumi"><img class="face sm" src="assets/rostos/MBA-EQ-H1.jpg" alt="Otávio"></div></div>
+<h3 style="margin-top:calc(18*var(--u))">Engenharia da Qualidade</h3><p class="cap">Verde · Yumi e Otávio</p></div>
+<div class="c-ia"><div style="height:calc(170*var(--u));border-radius:calc(18*var(--u));background:linear-gradient(165deg,#2E2970,#17144A);position:relative;overflow:hidden"><span class="vsym fio" style="color:var(--ca);width:calc(220*var(--u));height:calc(210*var(--u));right:calc(-30*var(--u));bottom:calc(-40*var(--u))"></span><div class="faces" style="position:absolute;left:calc(22*var(--u));bottom:calc(20*var(--u))"><img class="face sm" src="assets/rostos/MBA-GEP-H1.jpg" alt="Paulo"><img class="face sm" src="assets/rostos/MBA-GEP-M1.jpg" alt="Denise"></div></div>
+<h3 style="margin-top:calc(18*var(--u))">IA Aplicada a Projetos</h3><p class="cap">Roxo · Paulo e Denise</p></div>
+<div class="c-li"><div style="height:calc(170*var(--u));border-radius:calc(18*var(--u));background:linear-gradient(165deg,#2E2970,#17144A);position:relative;overflow:hidden"><span class="vsym fio" style="color:var(--ca);width:calc(220*var(--u));height:calc(210*var(--u));right:calc(-30*var(--u));bottom:calc(-40*var(--u))"></span><div class="faces" style="position:absolute;left:calc(22*var(--u));bottom:calc(20*var(--u))"><img class="face sm" src="assets/rostos/MBA-LIE-M1.jpg" alt="Beatriz"><img class="face sm" src="assets/rostos/MBA-LIE-H1.jpg" alt="Gustavo"></div></div>
+<h3 style="margin-top:calc(18*var(--u))">Liderança, IA e Execução</h3><p class="cap">Azul · Beatriz e Gustavo</p></div>
+</div>
+<div class="grid g3" style="gap:calc(28*var(--u));margin-top:calc(28*var(--u));padding-top:calc(24*var(--u));border-top:1px solid var(--g2)">
+<p style="font-size:calc(16*var(--u));color:var(--mut)"><b style="color:var(--ink)">Navy e branco</b> na estrutura, logo sem a cor do curso (a cor vai só no fio)</p>
+<p style="font-size:calc(16*var(--u));color:var(--mut)"><b style="color:var(--ink)">Work Sans e Inter</b>, peso máximo 700</p>
+<p style="font-size:calc(16*var(--u));color:var(--mut)"><b style="color:var(--ink)">Personagem em cena</b>, nunca retrato</p></div>
+</div></section>
+
+<!-- DIV RELACIONAMENTO -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">relacionamento</div><h2>Do lead à matrícula</h2></div></section>
+
+<!-- RÉGUA -->
+<section class="slide"><div class="s">
+<div class="ey">régua de e-mails</div><h2>Uma régua para os três cursos, guiada pelo que o lead faz</h2>
+<div class="body" style="display:grid;grid-template-columns:calc(190*var(--u)) 1fr calc(240*var(--u));gap:calc(28*var(--u));align-items:center">
+<div class="card navy" style="text-align:center;padding:calc(36*var(--u)) calc(20*var(--u))"><div class="big" style="font-size:calc(40*var(--u))">E1</div><p style="margin-top:calc(8*var(--u))">entrada, para todos</p></div>
+<div style="display:grid;gap:calc(12*var(--u))">
+<div class="card c-eq" style="background:var(--g1);padding:calc(18*var(--u)) calc(24*var(--u));display:flex;gap:calc(18*var(--u));align-items:center"><span class="pill cc" style="min-width:calc(140*var(--u))">clicou</span><p style="color:var(--ink)">Três e-mails de trilha e contato comercial no mesmo dia</p></div>
+<div class="card c-ia" style="background:var(--g1);padding:calc(18*var(--u)) calc(24*var(--u));display:flex;gap:calc(18*var(--u));align-items:center"><span class="pill cc" style="min-width:calc(140*var(--u))">abriu</span><p style="color:var(--ink)">Objeção e prova: turma, grade e quem já cursou</p></div>
+<div class="card" style="background:var(--g1);padding:calc(18*var(--u)) calc(24*var(--u));display:flex;gap:calc(18*var(--u));align-items:center"><span class="pill" style="min-width:calc(140*var(--u))">não abriu</span><p style="color:var(--ink)">Um reenvio com assunto novo e pausa</p></div>
+<div class="card c-li" style="background:var(--g1);padding:calc(18*var(--u)) calc(24*var(--u));display:flex;gap:calc(18*var(--u));align-items:center"><span class="pill cc" style="min-width:calc(140*var(--u))">último dia</span><p style="color:var(--ink)">Fecho para quem abriu ou clicou</p></div>
+</div>
+<div style="display:grid;gap:calc(28*var(--u))">
+<div class="kpi"><span class="big" style="font-size:calc(48*var(--u));color:var(--nv)">12 → 8</span><p>e-mails na régua</p></div>
+<div class="kpi"><span class="big" style="font-size:calc(48*var(--u));color:var(--eq)">10%+</span><p>da base chegando ao fechamento</p></div></div>
+</div></div></section>
+
+<!-- CONTEÚDO -->
+<section class="slide lt"><div class="s">
+<div class="ey">conteúdo e busca</div><h2>Quem busca MBA busca o tema do cargo</h2>
+<div class="body" style="display:grid;grid-template-columns:1fr 1fr;gap:calc(56*var(--u));align-items:start">
+<div style="display:grid;gap:calc(34*var(--u))">
+<div class="kpi"><span class="big" style="color:var(--ia)">5.400</span><p>buscas por mês para “mba gestão de projetos”. Espaço para o IAGE crescer no orgânico.</p></div>
+<div class="kpi"><span class="big" style="color:var(--li)">140</span><p>buscas para “mba gestão estratégica”, com baixa concorrência. Porta de entrada do LIEE.</p></div></div>
+<div style="display:grid;gap:calc(16*var(--u))">
+<div class="card"><h3>Kit Business Case</h3><p>Material para baixar, com o diferencial do curso como isca para o LIEE.</p></div>
+<div class="card"><h3>Blog que leva ao MBA</h3><p>Chamada do MBA nos posts de liderança, qualidade e projetos com mais tráfego.</p></div>
+<div class="card"><h3>Base própria</h3><p>Ex-alunos de Green Belt, ISO e IA em Projetos convidados para o próximo passo.</p></div></div>
+</div></div></section>
+
+<!-- DIV RESULTADOS -->
+<section class="slide dk div nonum"><div class="s">
+<span class="vsym" style="color:rgba(255,255,255,.07);width:calc(760*var(--u));height:calc(740*var(--u));right:calc(-120*var(--u));top:calc(-10*var(--u))"></span>
+<div class="ey">resultados</div><h2>Projeção e próximos passos</h2></div></section>
+
+<!-- PROJEÇÃO -->
+<section class="slide"><div class="s">
+<div class="ey">projeção por curso</div><h2>O que esperamos de cada verba</h2>
+<p class="lead">Captação de 26/10/2026 a 20/03/2027. Cada curso tem verba e objetivo próprios.</p>
+<div class="body grid g3" style="gap:calc(24*var(--u));margin-top:calc(32*var(--u))">
+<div class="card c-eq" style="background:var(--g1);padding:calc(30*var(--u))">
+<div style="display:flex;align-items:center;gap:calc(12*var(--u))"><img class="face sm" src="assets/rostos/MBA-EQ-M1.jpg" alt=""><h3 style="font-size:calc(20*var(--u))">Engenharia da Qualidade</h3></div>
+<span class="pill cc" style="margin-top:calc(16*var(--u))">R$ 31 mil</span>
+<div style="display:grid;gap:calc(22*var(--u));margin-top:calc(26*var(--u))">
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--eq)">1.800 a 2.080</span><p style="margin-top:calc(6*var(--u))">leads</p></div>
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--eq)">33 a 38</span><p style="margin-top:calc(6*var(--u))">matrículas</p></div></div></div>
+<div class="card c-ia" style="background:var(--g1);padding:calc(30*var(--u))">
+<div style="display:flex;align-items:center;gap:calc(12*var(--u))"><img class="face sm" src="assets/rostos/MBA-GEP-H1.jpg" alt=""><h3 style="font-size:calc(20*var(--u))">IA Aplicada a Projetos</h3></div>
+<span class="pill cc" style="margin-top:calc(16*var(--u))">R$ 62 mil</span>
+<div style="display:grid;gap:calc(22*var(--u));margin-top:calc(26*var(--u))">
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--ia)">2.030 a 2.350</span><p style="margin-top:calc(6*var(--u))">leads</p></div>
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--ia)">29 a 34</span><p style="margin-top:calc(6*var(--u))">matrículas</p></div></div></div>
+<div class="card c-li" style="background:var(--g1);padding:calc(30*var(--u))">
+<div style="display:flex;align-items:center;gap:calc(12*var(--u))"><img class="face sm" src="assets/rostos/MBA-LIE-M1.jpg" alt=""><h3 style="font-size:calc(20*var(--u))">Liderança, IA e Execução</h3></div>
+<span class="pill cc" style="margin-top:calc(16*var(--u))">R$ 40 mil</span>
+<div style="display:grid;gap:calc(22*var(--u));margin-top:calc(26*var(--u))">
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--li)">2.060 a 2.390</span><p style="margin-top:calc(6*var(--u))">leads</p></div>
+<div class="kpi"><span class="big" style="font-size:calc(40*var(--u));white-space:nowrap;color:var(--li)">16 a 19</span><p style="margin-top:calc(6*var(--u))">matrículas</p></div></div></div>
+</div>
+<div class="src">Estimativa com base no histórico das últimas turmas. Investimento bruto, com mídia, assessoria e imposto.</div>
+</div></section>
+
+<!-- CRONOGRAMA -->
+<section class="slide lt"><div class="s">
+<div class="ey">cronograma</div><h2>Cinco meses de captação, em três movimentos</h2>
+<div class="body" style="margin-top:calc(64*var(--u))">
+<div style="height:calc(6*var(--u));border-radius:99px;background:linear-gradient(90deg,var(--nv) 0 25%,var(--eq) 25% 55%,var(--ia) 55% 100%)"></div>
+<div style="display:grid;grid-template-columns:25fr 30fr 45fr;gap:calc(28*var(--u));margin-top:calc(30*var(--u))">
+<div><p class="lbl" style="color:var(--nv)">a partir de 26/10</p><h3 style="margin-top:calc(10*var(--u));font-size:calc(30*var(--u))">Lançar</h3><p class="cap" style="font-size:calc(16*var(--u))">Campanha no ar com as artes aprovadas, LPs revisadas, nova régua e rastreio com o tagueamento.</p></div>
+<div><p class="lbl" style="color:var(--eq)">nov e dez</p><h3 style="margin-top:calc(10*var(--u));font-size:calc(30*var(--u))">Testar</h3><p class="cap" style="font-size:calc(16*var(--u))">Os cinco layouts em rodízio, vídeo com verba própria e leitura semanal.</p></div>
+<div><p class="lbl" style="color:var(--ia)">jan a mar</p><h3 style="margin-top:calc(10*var(--u));font-size:calc(30*var(--u))">Escalar</h3><p class="cap" style="font-size:calc(16*var(--u))">Verba no que gera matrícula, remarketing com oferta e fecho das turmas.</p></div>
+</div></div></div></section>
+
+<!-- PRÓXIMOS PASSOS -->
+<section class="slide"><div class="s">
+<div class="ey">próximos passos</div><h2>Para colocar a campanha no ar</h2>
+<div class="body grid g2" style="gap:calc(32*var(--u))">
+<div class="card" style="background:var(--g1)"><h3>Fundação Vanzolini</h3>
+<div style="display:grid;gap:calc(14*var(--u));margin-top:calc(22*var(--u))"><p>Aprovar a ideia e os layouts</p><p>Turmas, datas, preços e desconto para ex-alunos</p><p>Comentários anônimos da pesquisa de satisfação</p><p>Selo do MEC, QR code e selo IA+</p><p>Texto final: certificação, ingresso do LIEE e 24x no boleto</p></div></div>
+<div class="card navy"><h3>Communitas</h3>
+<div style="display:grid;gap:calc(14*var(--u));margin-top:calc(22*var(--u))"><p>Peças dos três cursos em 4:5, 1:1, 9:16 e Reels</p><p>LPs e nova régua no RD</p><p>Rastreio junto com o tagueamento</p><p>Kit Business Case e conteúdo do blog</p></div></div>
+</div></div></section>
+
+<!-- FECHO -->
+<section class="slide nonum"><div class="s"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:calc(90*var(--u))">
+<span class="vlogo" style="width:calc(300*var(--u));height:calc(97*var(--u))" role="img" aria-label="Fundação Vanzolini"></span><span style="width:1px;height:calc(110*var(--u));background:var(--g2)"></span><img src="assets/communitas-laranja.svg" alt="Communitas" style="display:block;width:calc(235*var(--u));height:auto"></div></div></section>
+
+<script>
+// V do logo nunca na cor do curso: V em navy tonal + fio na cor (padrão aprovado 15/10/2026)
+document.querySelectorAll('.vsym.fio').forEach(e=>{e.innerHTML='<svg viewBox="0 0 537 531" preserveAspectRatio="xMidYMid meet"><path d="M 0 90.7 L 375.6 90.7 L 421.8 0 L 536.5 0 L 244.2 531 L 99.9 270.1 L 286.8 270.1 L 327.4 186.9 L 51.8 186.9 Z" fill="rgba(255,255,255,.06)" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>'});
+const sl=[...document.querySelectorAll('.slide')];let i=0;sl.forEach((s,k)=>s.dataset.n=k+1);
+function show(n){i=Math.max(0,Math.min(sl.length-1,n));sl.forEach((s,k)=>s.classList.toggle('on',k===i));sl[i].querySelectorAll('video').forEach(v=>{v.currentTime=0;v.play().catch(()=>{})});}
+function toggle(){document.body.classList.toggle('present');if(document.body.classList.contains('present'))show(i)}
+document.getElementById('btn').onclick=toggle;
+addEventListener('keydown',e=>{
+ if(e.key==='p'||e.key==='P'){toggle();return}
+ if(!document.body.classList.contains('present'))return;
+ if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();show(i+1)}
+ if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}
+ if(e.key==='Escape'){document.body.classList.remove('present')}
+});
+</script></body></html>
